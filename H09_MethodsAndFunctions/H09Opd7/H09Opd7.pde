@@ -7,10 +7,13 @@ background(200,200,200);
 
 brickX = -50;
 brickY = 0;
+tekenMuur();
 }
 
 void draw(){
+}
 
+void tekenMuur(){
 fill(200,85,57);
 for(int x = 0; x <12; x++){
   for(int y = 0; y <12; y++){
@@ -20,8 +23,9 @@ brickX = brickX + 60;
 if(brickX >= 250){
 brickY = brickY + 22;
 brickX = brickX - 280;
-}
+
  
+}
 }
 }
 }
